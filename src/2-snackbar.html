@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <a class="btn-nav" href="./index.html">Go back</a>
+
+  <form class="form">
+    <label class="delay-label">
+      Delay (ms)
+      <input class="input-delay" type="number" name="delay" required />
+    </label>
+
+    <fieldset>
+      <legend>State</legend>
+      <label class="state-label">
+        <input type="radio" name="state" value="fulfilled" required />
+        Fulfilled
+      </label>
+      <label class="state-label">
+        <input type="radio" name="state" value="rejected" required />
+        Rejected
+      </label>
+    </fieldset>
+
+    <button class="create-btn" type="submit">Create notification</button>
+  </form>
+
+  <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+
+</html>
